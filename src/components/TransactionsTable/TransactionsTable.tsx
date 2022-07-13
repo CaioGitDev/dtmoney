@@ -31,30 +31,7 @@ export const TransactionsTable: React.FC = () => {
             <td>Dev</td>
             <td>20/05/2022</td>
           </tr>
-          <tr>
-            <td>a culpa é do batema</td>
-            <td className="deposit">€ 12.000</td>
-            <td>Dev</td>
-            <td>20/05/2022</td>
-          </tr>
-          <tr>
-            <td>a culpa é do batema</td>
-            <td>€ 12.000</td>
-            <td>Dev</td>
-            <td>20/05/2022</td>
-          </tr>
-          <tr>
-            <td>a culpa é do batema</td>
-            <td>€ 12.000</td>
-            <td>Dev</td>
-            <td>20/05/2022</td>
-          </tr>
-          <tr>
-            <td>a culpa é do batema</td>
-            <td>€ 12.000</td>
-            <td>Dev</td>
-            <td>20/05/2022</td>
-          </tr>
+          
         </tbody>
       </table>
     </Container>
