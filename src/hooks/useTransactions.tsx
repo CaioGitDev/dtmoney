@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useContext, useEffect } from "react";
 import { createContext } from "react";
 import { api } from "../services/api";
 
@@ -22,7 +22,7 @@ interface ITransactionContextData {
   createTransaction(transaction: TransactionInput): Promise<void>;
 }
 
-export const TransactionContext = createContext<ITransactionContextData>(
+const TransactionContext = createContext<ITransactionContextData>(
   {} as ITransactionContextData
 );
 
@@ -54,3 +54,7 @@ export function TransactionProvider({ children }: ITransactionProviderProps) {
   )
 }
 
+export function useTransactions() {
+  const context = useContext(TransactionContext);
+  return context;
+}
